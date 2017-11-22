@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html Lang="es">
+	<head>
+		<title>Crow</title>
+		<link rel="icon" type="image/png" href="https://i.imgur.com/lCwuYLb.png"/>
+	</head>
+	<body background="https://i.imgur.com/xOqMlSL.png">
+		<h1><p style="color:MidnightBlue">Crow</p></h1>
+		<form method="POST" action="/add">
+		<input type="text" name="agregar" placeholder="Agregar Contacto">
+		<input type="submit" name="THREE" value="Agregar">
+			{% for i in b %}
+				<!--<div><p style="color:MidnightBlue"><scan name="THREE" value="b">{{b}}</scan></p></div>-->
+				<div><span>{{i}}</span></div>
+			{% endfor %}
+		<style type="text/css">
+			.d {position: relative; margin-top: 10px; margin-left: 10px; margin-bottom: 10px; color:MidnightBlue; float: right;}
+		</style>
+		<input type="submit" class="d" name="TWO" value="X">
+		</form>
+	</body>
+</html>

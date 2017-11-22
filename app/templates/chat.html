@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html Lang="es">
+	<head>
+		<title>Crow</title>
+		<link rel="icon" type="image/png" href="https://i.imgur.com/lCwuYLb.png"/>
+	</head>
+	<body background="https://i.imgur.com/WbkdwUA.png">
+		<h1><p style="color:MidnightBlue">Crow</p></h1>
+		<form action="/chat" method="POST">
+			<div id="perra">
+				<style type="text/css">
+					.a {margin-top: 5px;}
+				</style>
+			<h2 class="a"><p style="color:MidnightBlue">Contactos</p></h2>
+			</div>
+			<div id="a" >
+				<style type="text/css">
+					.c {position: relative; margin-top: 10px; margin-left: 325px; top: -60px; color:MidnightBlue}
+				</style>
+				<input type="submit" class="c" name="TWO" value="+" >
+			</div>
+			<br/>
+			<div id="contactos" style="position: relative; margin-top: -20px; margin-right: 1400px; margin-left: 20px; width: 300px; height: 450px; background-color:white; float: left;">
+				{% for i in contactos %}
+					<input type="radio" name="contacto_chat" value="{{i}}">{{i}}<br>
+				{% endfor %}
+			</div>
+			<div id="b">
+				<style type="text/css">
+					.b {margin-top: -50px; margin-left: 380px; color:MidnightBlue}
+				</style>
+				<input type="message" class="b" name="mensaje" placeholder="Escribir aqui" size="120">
+				<input type="submit" name="TWO" value="Enviar">
+				<div id="potro">
+					<style type="text/css">
+						.d {position: relative; margin-top: -610px; margin-left: 1000px; color:MidnightBlue; float: right;}
+						.g {position: relative; margin-top: -500px; margin-left: 1400px; margin-right: 40px; width: 900px; height: 450px; background-color:white; float: right;}
+					</style>
+					<input type="submit" class="d" name="TWO" value="X">
+				</div>
+				<div id="chat" class="g">
+					{% for i in nlist2 %}
+						<p id="chat">{{i}}<br></p>
+					{% endfor %}
+				</div>
+			</div>
+			
+		</form>
+	</body>
+</html>
